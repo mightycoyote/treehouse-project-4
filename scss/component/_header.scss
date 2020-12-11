@@ -21,7 +21,7 @@
     background-color: $color-primary;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: map-get($breakpoints, 'lg')) {
     .nav {
       flex-direction: row;
       justify-content: flex-end;
