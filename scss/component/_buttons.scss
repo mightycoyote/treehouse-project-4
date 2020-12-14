@@ -6,28 +6,26 @@
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
+    transition: background-color 1.2s;
     &.default {
       @extend .btn;
-      background-color: $color-primary;
-      &:hover {
-        background-color:lighten($color-primary, 15);
+      @include button-color($color-secondary);
       }
-    }
     &.error {
       @extend .btn;
-      background-color: $color-error;
+      @include button-color($color-error);
     }
     &.info {
       @extend .btn;
-      background-color: $color-info;
+      @include button-color($color-info);
     }
     &.success {
       @extend .btn;
-      background-color: $color-success;
+      @include button-color($color-success);
     }
     &.warning {
       @extend .btn;
-      background-color: $color-warning;
+      @include button-color($color-warning);
     }
 }
   
