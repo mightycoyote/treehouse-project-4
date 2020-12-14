@@ -5,30 +5,30 @@
     flex-direction: column;
   }
   
-  .nav-link {
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px 0;
-    display: block;
-    width: 100%;
-    transition: 
-      background-color .2s ease-in-out, 
-      color .2s ease-in-out;
-  }
-  
-  .nav-link:hover {
-    color: #fff;
-    background-color: $color-primary;
+.nav-link {
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+  transition: 
+    background-color .2s ease-in-out, 
+    color .2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background-color: $color-primary;
+}
+
+@media (min-width: map-get($breakpoints, 'lg')) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
   }
 
-  @media (min-width: map-get($breakpoints, 'lg')) {
-    .nav {
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-    }
-  
-    .nav-link {
-      flex-basis: 100px;
-    }
+  .nav-link {
+    flex-basis: 100px;
   }
+}
